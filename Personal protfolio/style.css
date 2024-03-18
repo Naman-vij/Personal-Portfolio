@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&family=Playfair+Display:wght@500&display=swap'); 
+/* font-family: 'M PLUS Rounded 1c', sans-serif;
+font-family: 'Playfair Display', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap'); 
+/* 'Lobster', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+/*  "Caveat", cursive*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar{
+    background-color: #434546;
+    /* width: 240px; */
+    font-family:'Playfair Display', serif;
+    height: 110vh;
+    transition: transform 0.5s ease-in;
+}
+
+.sidebar nav{
+    padding: 45px;
+} 
+
+.sidebar nav li{
+list-style: none;
+font-size: 30px;
+padding: 30px 0;
+}
+
+.sidebar nav li a{
+    text-decoration: none;
+    color: rgb(201, 225, 241);
+}
+
+
+.main{
+    /* background-color: blue; */
+    width: 90vw;
+    padding: 24px;
+}
+
+.container{
+    display: flex;
+     
+}
+
+.infocontainer {
+    /* background-color: yellow; */
+    height: 55vh;
+    width: 80vw;
+    margin: 144px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.devinfo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family:'Playfair Display', serif; 
+}
+
+.hello {
+    font-size: 40px;
+    text-decoration: underline;
+    font-weight: 200;
+}
+
+.name{
+    font-size: 50px;
+    font-weight: bold;
+    font-family:'M PLUS Rounded 1c', sans-serif; ;
+}
+
+.about{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.moreabout {
+    font-size: 26px;
+    padding: 22px;
+}
+
+.buttons {
+    padding-top: 35px;
+    
+}
+
+.buttons button{
+    padding: 14px;
+    margin: 14px;
+    color: aliceblue;
+    background-color: #5ba9c3;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.buttons button:hover{
+    background-color: aliceblue;
+    color: #5ba9c3;
+    cursor: pointer;
+}
+
+.dbutton{
+    border-radius: 12px;
+}
+
+.cbutton{
+    border-radius: 12px;
+}
+
+.button-sm{
+    border-radius: 14px;
+    padding: 14px;
+    margin: 14px;
+}
+
+.button-sm:hover{
+    background-color: rgb(24, 26, 28);
+    color: #d1e0e5;
+    cursor: pointer;
+}
+
+.devpic img{
+    height: 55vh;
+    -webkit-box-reflect: ;
+    
+}
+
+/* Contact form */
+
+.contactform{
+    font-family:'M PLUS Rounded 1c', sans-serif ;
+    /* text-align: center; */
+    padding-top: 140px;
+    padding-left: 50px;
+}
+
+.contactform h1{
+    font-size: 40px;
+    font-family:'Lobster', sans-serif ;
+}
+
+.contactform form div{
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+#isclient{
+    margin-left: 0;
+    justify-items: left;
+}
+
+.form-text{
+    font-size: 8px;
+    color: #118cae;
+    margin: 0 5px ;
+}
+
+.form-control{
+    width: 35%;
+    border-radius: 4px;
+    padding: 5px;
+    margin: 5px;
+}
+
+#form-check{
+    flex-direction: row;
+    padding-top: 4px;
+}
+
+.devinfo  h4{
+    font-family:'M PLUS Rounded 1c', sans-serif ;
+    text-align: center;
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: #284d66;
+}
+
+.devinfo h1,  h2{
+    font-family:'M PLUS Rounded 1c', sans-serif ;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+}
+
+.devinfo pre{
+    font-family:"Caveat", cursive ;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.firstword{
+    color: #113f67;
+}
+
+.skill1{
+    height: 15px;
+    width: 100%;
+    background-color: #5585b5;
+    transition: width 2s;
+    border-radius: 2px solid black;
+}
+
+.skill1:hover{
+    width: 30%;
+    cursor: pointer;
+}
+
+.skill2{
+    height: 15px;
+    width: 100%;
+    background-color: #53a8b6;
+    transition: width 2s;
+}
+
+.skill2:hover{
+    width: 25%;
+    cursor: pointer;
+}
+
+.skill3{
+    height: 15px;
+    width: 100%;
+    background-color: #79c2d0;
+    transition: width 2s;
+}
+
+.skill3:hover{
+    width: 17%;
+    cursor: pointer;
+}
+
+.skill4{
+    height: 15px;
+    width: 100%;
+    background-color: #bbe4e9;
+    transition: width 2s;
+}
+
+.skill4:hover{
+    width: 21%;
+    cursor: pointer;
+}
+
+.hamburger{
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+}
+
+.sidebargo{
+    transform: translate(-400px, 0);
+    position: absolute;
+}
+
+.cross{
+    margin-left: 135px;
+}
